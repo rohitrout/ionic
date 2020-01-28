@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Factorial of a Number
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+  <ion-item>
+    <ion-label position="stacked" color="secondary">Enter a Number</ion-label>
+    <ion-input type="text" [(ngModel)]="num1"></ion-input>
+  </ion-item>
+
+  <ion-button expand="round" color="tertiary" (click)="factorial()">Find Factorial</ion-button>
+
+  </ion-card>
+
+  <ion-card padding>
+  <p style="font-size: 20px;">The factorial of the given number is:  {{this.fact}}</p>
+
+</ion-card>
+</ion-content>
